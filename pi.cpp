@@ -11,7 +11,10 @@ using namespace std;
 
 //  look into: https://www.experimentalmath.info/bbp-codes/
 // https://mathworld.wolfram.com/Digit-ExtractionAlgorithm.html
-    
+long double B_2n(long double n){
+    return n;
+}
+
 int main() {
 
     // dn = int(10*frac(10^(n-1) * 1))
