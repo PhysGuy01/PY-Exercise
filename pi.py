@@ -3,7 +3,6 @@
 #       --  Author: @PhysGuy01  --
 #
 
-from decimal import *
 from decimal import Context, setcontext, Decimal, ROUND_DOWN, ROUND_UP
 from time import time
 
