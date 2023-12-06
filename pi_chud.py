@@ -31,18 +31,13 @@ def Q(b):
     for i in range(1, b):
         p *= Decimal(10939058860032000 * (i**3))
     return Decimal(p)
-'''
-if n >= 100: 
-    n_new = int(Decimal(n*0.5).to_integral_exact(ROUND_DOWN))
-elif n >= 1000:
-    n_new = int(Decimal(n*0.071).to_integral_exact(ROUND_DOWN))
-else: n_new = n
-'''
 
-# TODO: implement for speed
-# Memento: time compl: O(n(log n)^3)
-# no this doesnt work *vvv*
-n_new = int((1 / (n*(Decimal(n).ln()) ** 3)).to_integral_exact(ROUND_DOWN))
+
+if n >= 1000: 
+    n_new = int(Decimal(n*0.071).to_integral_exact(ROUND_DOWN))
+elif n >= 100:
+    n_new = int(Decimal(n*0.5).to_integral_exact(ROUND_DOWN))
+else: n_new = n
 
 setcontext(Context(prec=n+3, rounding=ROUND_DOWN))
 
