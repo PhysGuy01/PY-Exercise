@@ -47,6 +47,7 @@ for k in range(1, n_new):
 
 q = Q(n_new)
 
+# Time complexity O(n(logn)^3)
 pi = Decimal((426880 * Decimal(10005).sqrt() * q) / ((13591409 * q) + (q * s)))
 
 setcontext(Context(prec=n, rounding=ROUND_DOWN))
