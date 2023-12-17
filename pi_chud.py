@@ -32,12 +32,14 @@ def Q(b):
         p *= Decimal(10939058860032000 * (i**3))
     return Decimal(p)
 
+# correct digits = 2^iterations
 
 if n >= 1000: 
     n_new = int(Decimal(n*0.071).to_integral_exact(ROUND_DOWN))
 elif n >= 100:
     n_new = int(Decimal(n*0.5).to_integral_exact(ROUND_DOWN))
 else: n_new = n
+
 
 setcontext(Context(prec=n+3, rounding=ROUND_DOWN))
 
