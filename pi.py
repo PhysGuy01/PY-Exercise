@@ -1,5 +1,5 @@
 #   
-#   Program to calculate pi to the n digit.
+#   Program to calculate pi to the nth digit.
 #       --  Author: @PhysGuy01  --
 #
 
